@@ -3,17 +3,6 @@ import { FaGithub, FaLinkedin, FaTwitter, FaBars, FaTimes } from 'react-icons/fa
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  
-  // Handle scroll effect for the navbar
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   
   // Toggle menu
   const toggleMenu = () => {
@@ -40,23 +29,13 @@ const MobileMenu = () => {
     { id: 'contact', label: 'Contact' }
   ];
   
-  // Social links
-  const socialLinks = [
-    { icon: <FaGithub />, url: "#", label: "GitHub" },
-    { icon: <FaLinkedin />, url: "#", label: "LinkedIn" },
-    { icon: <FaTwitter />, url: "#", label: "Twitter" }
-  ];
-  
   return (
     <>
       {/* Header with hamburger menu */}
-      <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
-        <div className="container mx-auto px-6 py-4">
+      <header className={`fixed top-1 w-full z-50 transition-all duration-300 shadow-lg`}>
+        <div className="container mx-auto ">
           <div className="flex justify-between items-center">
-            {/* Logo/Name */}
-            <a href="#" className="text-2xl font-bold text-mycolor">
-              Dev<span className="text-white">Portfolio</span>
-            </a>
+
             
             {/* Desktop Navigation - hidden on mobile */}
             <nav className="hidden md:flex space-x-8">
@@ -75,18 +54,7 @@ const MobileMenu = () => {
               ))}
             </nav>
             
-            {/* Mobile menu toggle button - clearly visible on mobile */}
-            <button 
-              className="md:hidden flex items-center justify-center text-white bg-red-800 hover:bg-red-700 p-2 rounded-md transition-colors focus:outline-none z-50"
-              onClick={toggleMenu}
-              aria-label="Toggle mobile menu"
-            >
-              {isOpen ? 
-                <FaTimes className="h-5 w-5 text-white" /> : 
-                <FaBars className="h-5 w-5 text-white" />
-              }
-              <span className="ml-2 text-sm font-medium">{isOpen ? 'Close' : 'Menu'}</span>
-            </button>
+        
           </div>
         </div>
       </header>
@@ -126,24 +94,7 @@ const MobileMenu = () => {
             ))}
           </nav>
           
-          {/* Social links */}
-          <div className="flex justify-center space-x-6 py-8">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                className={`text-white hover:text-mycolor text-2xl transition-all
-                          ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`}
-                style={{ 
-                  transitionDelay: isOpen ? `${(navItems.length + index) * 75}ms` : '0ms',
-                  transition: 'all 400ms ease'
-                }}
-                aria-label={link.label}
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
+
           
           {/* Bottom glowing border */}
           <div className={`w-full h-0.5 bg-gradient-to-r from-red-700 via-red-500 to-red-700 opacity-0 transition-opacity duration-1000 ${isOpen ? 'opacity-80' : ''}`}></div>
@@ -152,8 +103,8 @@ const MobileMenu = () => {
       
       {/* Fixed floating menu button moved to top instead of bottom */}
       <button 
-        className={`md:hidden fixed top-6 right-6 bg-red-700 text-white p-3 rounded-full shadow-lg z-30 transform transition-all duration-300 ${
-          scrolled && !isOpen ? 'translate-y-0 opacity-100' : 'translate-y-(-16) opacity-0'
+        className={`md:hidden fixed top-2 right-3 bg-red-700 text-white p-3 rounded-full shadow-lg z-30 transform transition-all duration-300 ${
+          !isOpen ? 'translate-y-0 opacity-100' : 'translate-y-(-16) opacity-0'
         }`}
         onClick={toggleMenu}
         aria-label="Open navigation menu"
