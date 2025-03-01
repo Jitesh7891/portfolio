@@ -23,7 +23,7 @@ const Achievements = () => {
     const spread = 5 + Math.sin(adjustedIntensity * Math.PI * 2) * 1;
     
     return {
-      boxShadow: `0 0 ${spread}px ${spread}px rgba(239, 68, 68, ${opacity})`,
+      boxShadow: `0 0 ${spread}px ${spread}px rgba(59, 130, 246, ${opacity})`,
       transition: 'all 0.5s ease'
     };
   };
@@ -63,7 +63,7 @@ const Achievements = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-mycolor relative">
           <span className="relative z-10">Achievements</span>
-          <span className={`absolute inset-0 bg-gradient-to-r from-red-500/30 to-red-700/30 blur-lg rounded-lg transform scale-110 -z-10`}></span>
+          <span className={`absolute inset-0 bg-gradient-to-r from-indigo-500/30 to-indigo-700/30 blur-lg rounded-lg transform scale-110 -z-10`}></span>
         </h2>
         
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -74,7 +74,7 @@ const Achievements = () => {
               style={getGlowStyle(index)}
             >
               <div className="relative z-10 flex">
-                <div className="bg-red-700 h-16 w-16 rounded-lg flex items-center justify-center text-white text-xl font-bold mr-4 flex-shrink-0">
+                <div className="bg-indigo-700 h-16 w-16 rounded-lg flex items-center justify-center text-white text-xl font-bold mr-4 flex-shrink-0">
                   {achievement.icon}
                 </div>
                 <div>

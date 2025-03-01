@@ -9,12 +9,12 @@ const Projects = () => {
       tech: ['React', 'Firebase', 'Express.js', 'Node.js', 'Stripe', 'TailwindCSS'],
       points: [
         "Enhanced responsiveness with interactive layouts and improved performance by 25%",
-        "Integrated Stripe Payments, enabled secure transactions, reduced checkout time by 30%",
-        "Leveraged Firebase to optimize data fetching speed, reduced load times by 20%"
+        "Integrated Stripe Payments, enabled secure transactions, indigouced checkout time by 30%",
+        "Leveraged Firebase to optimize data fetching speed, indigouced load times by 20%"
       ],
       githubLink: "https://github.com/Jitesh7891/chiccart",
       liveLink: "https://chiccart.onrender.com",
-      gradient: "from-red-900 to-red-800"
+      gradient: "from-mycolor-900 to-mycolor-800"
     },
     {
       title: "SocialTea",
@@ -27,7 +27,7 @@ const Projects = () => {
       ],
       githubLink: "https://github.com/Jitesh7891/socialtea",
       liveLink: "https://socialtea.onrender.com",
-      gradient: "from-red-800 to-red-900"
+      gradient: "from-mycolor-800 to-mycolor-900"
     },
     {
       title: "CryptoVerse",
@@ -41,7 +41,7 @@ const Projects = () => {
       
       githubLink: "https://github.com/Jitesh7891/cryptoverse",
       liveLink: "https://cryptoverse-0ai7.onrender.com/",
-      gradient: "from-red-800 to-red-900"
+      gradient: "from-mycolor-800 to-mycolor-900"
     }
   ];
 
@@ -58,14 +58,14 @@ const Projects = () => {
               {/* Card container with 3D effect */}
               <div className="relative preserve-3d duration-500 group-hover:rotate-y-10 group-hover:rotate-x-10 group-hover:scale-105">
                 {/* Card content */}
-                <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-500 relative shadow-red-900/10 group-hover:shadow-none">
+                <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-500 relative shadow-mycolor-900/10 group-hover:shadow-none">
                   {/* Header gradient */}
                   <div className={`h-48 bg-gradient-to-r ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
                     {/* Dynamic particles on hover (decorative) */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                      <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-red-200 animate-ping opacity-75"></div>
-                      <div className="absolute top-3/4 left-2/3 w-3 h-3 rounded-full bg-red-300 animate-ping opacity-50 animation-delay-300"></div>
-                      <div className="absolute top-2/4 left-1/2 w-2 h-2 rounded-full bg-red-100 animate-ping opacity-75 animation-delay-700"></div>
+                      <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-mycolor-200 animate-ping opacity-75"></div>
+                      <div className="absolute top-3/4 left-2/3 w-3 h-3 rounded-full bg-mycolor-300 animate-ping opacity-50 animation-delay-300"></div>
+                      <div className="absolute top-2/4 left-1/2 w-2 h-2 rounded-full bg-mycolor-100 animate-ping opacity-75 animation-delay-700"></div>
                     </div>
                     
                     <h3 className="text-2xl font-bold text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110">{project.title}</h3>
@@ -75,7 +75,7 @@ const Projects = () => {
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech) => (
-                        <span key={tech} className="bg-gray-700 text-red-500 px-2 py-1 rounded text-xs transform transition-all duration-300 group-hover:bg-gray-600 group-hover:text-red-400">
+                        <span key={tech} className="bg-gray-700 text-mycolor-500 px-2 py-1 rounded text-xs transform transition-all duration-300 group-hover:bg-gray-600 group-hover:text-mycolor-400">
                           {tech}
                         </span>
                       ))}
@@ -97,11 +97,11 @@ const Projects = () => {
                           href={project.githubLink} 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="text-mycolor hover:text-red-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
+                          className="text-mycolor hover:text-mycolor-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
                         >
                           <FaGithub className="mr-1" /> 
                           <span>GitHub</span>
-                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-mycolor-500 transition-all duration-300 group-hover:w-full"></span>
                         </a>
                       )}
                       
@@ -110,11 +110,11 @@ const Projects = () => {
                           href={project.liveLink} 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="text-mycolor hover:text-red-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
+                          className="text-mycolor hover:text-mycolor-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
                         >
                           <FaCode className="mr-1" /> 
                           <span>Live Demo</span>
-                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-mycolor-500 transition-all duration-300 group-hover:w-full"></span>
                         </a>
                       )}
                     </div>

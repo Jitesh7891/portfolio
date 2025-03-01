@@ -10,7 +10,7 @@ const Skills = () => {
     {
       name: "Frameworks",
       skills: ["React", "Next", "Express", "Node"],
-      color: "#4299E1"
+      color: "#FFEB3B"
     },
     {
       name: "Others",
