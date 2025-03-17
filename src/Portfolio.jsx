@@ -99,7 +99,7 @@ export const Portfolio = () => {
             Jitesh Shewaramani
           </h1>
           <h2 className={`text-2xl font-medium mb-8 transform ${animateHero ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} transition-all duration-1000 delay-300`}>
-            Web Developer & Competitive Programmer
+            Full-Stack Developer & Competitive Programmer
           </h2>
           <div className={`flex justify-center space-x-4 mb-12 transform ${animateHero ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} transition-all duration-1000 delay-500`}>
             <a href="https://www.github.com/Jitesh7891" target="_blank" rel="noopener noreferrer" className="bg-dark-lighter text-mycolor p-3 rounded-full hover:bg-dark-light transition-colors duration-300 hover:scale-110 transform">
@@ -141,12 +141,12 @@ export const Portfolio = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-2/3 animate-on-scroll opacity-0 transform translate-x-6 transition-all duration-700">
-              <h3 className="text-2xl font-semibold mb-4 text-white">IT Engineering Student & Web Developer</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-white">IT Engineering Student & Full-Stack Developer</h3>
               <p className="text-gray-300 mb-4">
-                I'm a B.Tech student in Information Technology at Indian Institute of Information Technology, Bhopal with a passion for web development and competitive programming. I enjoy building responsive, user-friendly web applications and solving algorithmic challenges.
+                I'm a B.Tech student in Information Technology at Indian Institute of Information Technology, Bhopal with a passion for Full-Stack development and competitive programming. I enjoy building responsive, user-friendly Full-Stack applications and solving algorithmic challenges.
               </p>
               <p className="text-gray-300 mb-6">
-                With a strong foundation in modern web technologies and data structures & algorithms, I'm constantly looking to learn and grow as a developer.
+                With a strong foundation in modern Full-Stack technologies and data structures & algorithms, I'm constantly looking to learn and grow as a developer.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-dark-lighter py-2 px-4 rounded-md transition-all duration-300 hover:bg-mycolor-900/20 hover:shadow-md">
@@ -191,7 +191,7 @@ export const Portfolio = () => {
               <div className="absolute left-0 top-0 w-4 h-4 rounded-full bg-mycolor transform -translate-x-1/2 animate-pulse" style={{animationDelay: '0.5s'}}></div>
               <div className="bg-dark p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-500 mb-12 shadow-mycolor-900/10 hover:shadow-mycolor-800/20 hover:translate-y-1 transform">
                 <div className="flex flex-wrap justify-between items-center mb-4">
-                  <h3 className="text-xl font-semibold text-mycolor">Web Developer</h3>
+                  <h3 className="text-xl font-semibold text-mycolor">Full-Stack Developer</h3>
                   <span className="bg-mycolor-900/30 text-mycolor-300 text-sm px-3 py-1 rounded-md">Sep 2023 - Sep 2024</span>
                 </div>
                 <h4 className="text-lg font-medium text-white mb-4">CODAME, IIIT BHOPAL</h4>
