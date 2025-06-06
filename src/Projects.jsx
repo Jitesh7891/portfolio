@@ -4,6 +4,20 @@ import { FaGithub, FaCode } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
+      title: "Visionera",
+      description: "AI-powered SaaS platform for intelligent image transformation and search using Cloudinary AI and Google tagging.",
+      tech: ['Next.js', 'TypeScript', 'Cloudinary AI', 'Stripe', 'Clerk', 'TailwindCSS', 'MongoDB'],
+      points: [
+        "Built dynamic SaaS platform with secure Clerk auth and Stripe webhooks for seamless payments",
+        "Reduced backend load by 30% through input debouncing and optimized API call handling",
+        "Boosted data fetching speed by 25% with cached MongoDB connections and server-side pagination"
+      ],
+      githubLink: "https://github.com/Jitesh7891/visionera",
+      liveLink: "https://visionera.vercel.app",
+      gradient: "from-mycolor-900 to-mycolor-800"
+    },
+
+    {
       title: "ChicCart",
       description: "E-commerce store with responsive layouts, optimized performance, and integrated Stripe payments.",
       tech: ['React', 'Firebase', 'Express.js', 'Node.js', 'Stripe', 'TailwindCSS'],
@@ -18,7 +32,7 @@ const Projects = () => {
     },
     {
       title: "SocialTea",
-      description: "Social media application with immersive UI design and real-time chat functionality.",
+      description: "Social media platform with user authentication, customizable profiles, features like post sharing,likes, and real-time chat.",
       tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'socket.io', 'JWT'],
       points: [
         "Developed a Social Media App with immersive UI design and real-time chat with socket.io",
@@ -38,7 +52,7 @@ const Projects = () => {
         "Utilized Chart.js to visualize cryptocurrency price changes over various time periods",
         "Integrated Cryptocurrency API for real-time data and market information"
       ],
-      
+
       githubLink: "https://github.com/Jitesh7891/cryptoverse",
       liveLink: "https://cryptoverse-0ai7.onrender.com/",
       gradient: "from-mycolor-800 to-mycolor-900"
@@ -51,8 +65,8 @@ const Projects = () => {
         <h2 className="text-3xl font-bold text-center mb-12 text-mycolor">Academic Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group perspective-1000 relative hover:z-10"
             >
               {/* Card container with 3D effect */}
@@ -67,10 +81,10 @@ const Projects = () => {
                       <div className="absolute top-3/4 left-2/3 w-3 h-3 rounded-full bg-mycolor-300 animate-ping opacity-50 animation-delay-300"></div>
                       <div className="absolute top-2/4 left-1/2 w-2 h-2 rounded-full bg-mycolor-100 animate-ping opacity-75 animation-delay-700"></div>
                     </div>
-                    
+
                     <h3 className="text-2xl font-bold text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110">{project.title}</h3>
                   </div>
-                  
+
                   <div className="p-6">
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -80,39 +94,39 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
-                    
+
                     <p className="text-gray-300 mb-4">
                       {project.description}
                     </p>
-                    
+
                     <ul className="list-disc list-inside text-gray-300 mb-6 space-y-1 text-sm">
                       {project.points.map((point, i) => (
                         <li key={i} className="transition-all duration-300 group-hover:translate-x-1 opacity-90 group-hover:opacity-100">{point}</li>
                       ))}
                     </ul>
-                    
+
                     <div className="flex space-x-4">
                       {project.githubLink && (
-                        <a 
-                          href={project.githubLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-mycolor hover:text-mycolor-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
                         >
-                          <FaGithub className="mr-1" /> 
+                          <FaGithub className="mr-1" />
                           <span>GitHub</span>
                           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-mycolor-500 transition-all duration-300 group-hover:w-full"></span>
                         </a>
                       )}
-                      
+
                       {project.liveLink && (
-                        <a 
-                          href={project.liveLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-mycolor hover:text-mycolor-500 transition-colors flex items-center relative overflow-hidden group-hover:font-medium"
                         >
-                          <FaCode className="mr-1" /> 
+                          <FaCode className="mr-1" />
                           <span>Live Demo</span>
                           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-mycolor-500 transition-all duration-300 group-hover:w-full"></span>
                         </a>

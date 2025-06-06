@@ -38,7 +38,7 @@ const Achievements = () => {
     {
       icon: "CF",
       title: "Codeforces Specialist",
-      description: "Achieved a rating of 1400+ (Specialist) on Codeforces, showcasing growth in algorithmic skills"
+      description: "Achieved a rating of 1600+ (Expert) on Codeforces, showcasing growth in algorithmic skills"
     },
     {
       icon: "CC",
@@ -53,7 +53,7 @@ const Achievements = () => {
     {
       icon: "DSA",
       title: "Problem-Solving Expertise",
-      description: "Solved over 700 DSA problems on LeetCode and a total of 1200+ problems on various coding platforms",
+      description: "Solved over 900 DSA problems on LeetCode and a total of 1500+ problems on various coding platforms",
       fullWidth: true
     }
   ];
