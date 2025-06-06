@@ -37,7 +37,7 @@ const Achievements = () => {
     },
     {
       icon: "CF",
-      title: "Codeforces Specialist",
+      title: "Codeforces Expert",
       description: "Achieved a rating of 1600+ (Expert) on Codeforces, showcasing growth in algorithmic skills"
     },
     {
