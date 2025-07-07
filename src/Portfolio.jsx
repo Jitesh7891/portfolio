@@ -183,7 +183,7 @@ export const Portfolio = () => {
                 </div>
                 <h4 className="text-lg font-medium text-white mb-4">Axios, IIIT BHOPAL</h4>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
-                  <li>Spearheaded 5+ programming events, fostering stronger developer culture and increasing engagement by 300%</li>
+                  <li>Spearheaded 10+ programming events, managing a team of 40 members and increasing participant engagement by 300%</li>
                 </ul>
               </div>
             </div>

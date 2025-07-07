@@ -14,7 +14,7 @@ const Skills = () => {
     },
     {
       name: "Others",
-      skills: ["MongoDB", "SQL", "Git", "GitHub", "VS Code", "Firebase", "Bootstrap", "Tailwind CSS"],
+      skills: ["Linux", "Docker", "MongoDB", "SQL", "Git", "GitHub", "VS Code", "Firebase", "Bootstrap", "Tailwind CSS"],
       color: "#68D391"
     }
   ];
