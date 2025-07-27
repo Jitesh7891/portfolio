@@ -178,6 +178,24 @@ export const Portfolio = () => {
               <div className="absolute left-0 top-0 w-4 h-4 rounded-full bg-mycolor transform -translate-x-1/2 animate-pulse"></div>
               <div className="bg-dark p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-500 mb-12 shadow-mycolor-900/10 hover:shadow-mycolor-800/20 hover:translate-y-1 transform">
                 <div className="flex flex-wrap justify-between items-center mb-4">
+                  <h3 className="text-xl font-semibold text-mycolor">SDE Intern</h3>
+                  <span className="bg-mycolor-900/30 text-mycolor-300 text-sm px-3 py-1 rounded-md">Jul 2025 - Present</span>
+                </div>
+                <h4 className="text-lg font-medium text-white mb-4">Buyhatke</h4>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                   <li>Developing a Chrome extension-based product scraper system for dynamic e-commerce sites like Myntra</li>
+<li>Integrating hostname-based API configs for selector rules and optimizing DOM interaction using service workers</li>
+<li>Implementing backend logic to standardize scraped data for accurate price comparison and user tracking something like this</li>
+                </ul>
+                <div className="mt-4">
+                 <span className="text-sm text-gray-400">Technologies: JavaScript, SQL, Express.js, Extensions, Web Scraping</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative pl-8 border-l-2 border-mycolor animate-on-scroll opacity-0 transform translate-y-6 transition-all duration-700">
+              <div className="absolute left-0 top-0 w-4 h-4 rounded-full bg-mycolor transform -translate-x-1/2 animate-pulse"></div>
+              <div className="bg-dark p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-500 mb-12 shadow-mycolor-900/10 hover:shadow-mycolor-800/20 hover:translate-y-1 transform">
+                <div className="flex flex-wrap justify-between items-center mb-4">
                   <h3 className="text-xl font-semibold text-mycolor">Co-Coordinator</h3>
                   <span className="bg-mycolor-900/30 text-mycolor-300 text-sm px-3 py-1 rounded-md">Sep 2024 - Present</span>
                 </div>
@@ -185,6 +203,10 @@ export const Portfolio = () => {
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li>Spearheaded 10+ programming events, managing a team of 40 members and increasing participant engagement by 300%</li>
                 </ul>
+                <div className="mt-4">
+
+                 <span className="text-sm text-gray-400">Skills: Leadership, Team Management, Event Management</span>
+                </div>
               </div>
             </div>
             <div className="relative pl-8 border-l-2 border-mycolor animate-on-scroll opacity-0 transform translate-y-6 transition-all duration-700 delay-300">
