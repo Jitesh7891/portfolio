@@ -183,7 +183,7 @@ export const Portfolio = () => {
                 </div>
                 <h4 className="text-lg font-medium text-white mb-4">Buyhatke</h4>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
-                   <li>Built RESTful APIs using Express, structured data models and implemented automated background tasks using cron jobs/li>
+                   <li>Built RESTful APIs using Express, structured data models and implemented automated background tasks using cron jobs</li>
 <li>Developed Manifest V3 Chrome extensions integrated with MERN, delivering real time features to 50,000+ daily active users</li>
                 </ul>
                 <div className="mt-4">
@@ -217,7 +217,7 @@ export const Portfolio = () => {
                 </div>
                 <h4 className="text-lg font-medium text-white mb-4">CODAME, IIIT BHOPAL</h4>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
-                  <li>Spearheaded development of the club’s official website, which delivered seamless UI/UX across devices and enhanced 
+                  <li>Spearheaded development of the club&apos;s official website, which delivered seamless UI/UX across devices and enhanced 
       performance by 15% through lazy loading, caching, and route-based code splitting</li>
                   <li>Collaborated within a 3-member Agile team to ensure timely delivery across multiple sprints, ensuring smooth coordination 
       and meeting project deadlines 
