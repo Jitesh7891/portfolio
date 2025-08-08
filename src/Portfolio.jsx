@@ -187,7 +187,7 @@ export const Portfolio = () => {
 <li>Developed Manifest V3 Chrome extensions integrated with MERN, delivering real time features to 50,000+ daily active users</li>
                 </ul>
                 <div className="mt-4">
-                 <span className="text-sm text-gray-400">Technologies: JavaScript, SQL, Express.js, Extensions, Web Scraping</span>
+                 <span className="text-sm text-gray-400">Technologies: JavaScript, SQL, Express.js, Extensions</span>
                 </div>
               </div>
             </div>
